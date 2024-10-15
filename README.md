@@ -1,4 +1,5 @@
-# Selection sort and Insertion sort
+# EX-7 Selection sort and Insertion sort
+# Date:
 ## Aim:
 To write a program to perform selection sort and insertion sort using python programming.
 ## Equipment’s required:
@@ -18,17 +19,38 @@ To write a program to perform selection sort and insertion sort using python pro
 4.	Break the loop and insert X.
 5.	Repeat the steps 2 to 4 for sorting all the elements in the array.
 ## Program:
-i)	#Selection Sort
 ```
+i)	Selection Sort
+
+def selection_sort(nums):
+    for i in range(len(nums)):
+        lowest_value_index = i
+        for j in range(i+1,len(nums)):
+            if nums[j]<nums[lowest_value_index]:
+                lowest_value_index=j
+        nums[i],nums[lowest_value_index]=nums[lowest_value_index],nums[i]
+
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
 
 
 
 
 
-```
-ii)	#Insertion Sort
-```
+ii)	Insertion Sort
 
+def selection_sort(nums):
+    for i in range(len(nums)):
+        lowest_value_index = i
+        for j in range(i+1, len(nums)):
+            if nums[j] < nums[lowest_value_index]:
+                lowest_value_index = j
+        nums[i], nums[lowest_value_index] = nums[lowest_value_index], nums[i]
+
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
 
 
 
@@ -37,6 +59,11 @@ ii)	#Insertion Sort
 ```
 
 ## Output:
+
+![Screenshot 2024-10-15 183052](https://github.com/user-attachments/assets/61ffcf5e-b33a-4c30-8ddc-fa1383859a99)
+
+![Screenshot 2024-10-15 183107](https://github.com/user-attachments/assets/d1136ded-0c2e-4e95-8bc9-aa5213fb8903)
+
 
 
 ## Result:
