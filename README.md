@@ -1,4 +1,4 @@
-# EX-7 Selection sort and Insertion sort
+# EX-8 Selection sort and Insertion sort
 # Date:
 ## Aim:
 To write a program to perform selection sort and insertion sort using python programming.
